@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making a form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      label {
+        display: block;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="form.html">Form</a>
+            <ul class="drop">
+              <li><a href="form.html">Form</a></li>
+              <li><a href="index.html">Index</a></li>
+              <li><a href="table.html">Table</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">Index</a>
+            <ul class="drop">
+              <li><a href="form.html">Form</a></li>
+              <li><a href="index.html">Index</a></li>
+              <li><a href="table.html">Table</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="table.html">Table</a>
+            <ul class="drop">
+              <li><a href="form.html">Form</a></li>
+              <li><a href="index.html">Index</a></li>
+              <li><a href="table.html">Table</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <form>
+      <label for="name">
+        Your name:
+        <input placeholder="Name" id="name" type="text" />
+      </label>
+      <label for="email"
+        >Your Email:
+        <input placeholder="Email" type="email" name="" id="email" />
+      </label>
+      <label for="mobile"
+        >Your phone:
+        <input placeholder="Mobile" type="text" name="" id="mobile" />
+      </label>
+      <fieldset>
+        <legend>PIck your identity</legend>
+        <label for="Bangladeshi">
+          <input type="radio" name="country" id="Bangladeshi" />Bangladeshi
+        </label>
+        <label for="Non Bangladeshi">
+          <input type="radio" name="country" id="Non Bangladeshi" />Non
+          Bangladeshi
+        </label>
+      </fieldset>
+      <label for="gender"
+        >Gender:
+        <select name="" id="">
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">Other</option>
+        </select>
+      </label>
+      <label for=""
+        >Marital Status <input type="checkbox" name="" id="" />Married
+      </label>
+      <label for="region"
+        >Select your region:
+        <select name="" id="region">
+          <option value="">Dhaka</option>
+          <option value="">Comilah</option>
+          <option value="">Noakhali</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Experience</legend>
+        <label for=""> <input type="checkbox" name="exam" id="" />Gre </label>
+        <label for=""> <input type="checkbox" name="exam" id="" />Ielts </label>
+        <label for=""> <input type="checkbox" name="exam" id="" />Toefl </label>
+      </fieldset>
+      <fieldset>
+        <legend>Experiences</legend>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <input type="reset" value="" />Reset
+      <input type="submit" value="" />Submit
+    </form>
+  </body>
+</html>
